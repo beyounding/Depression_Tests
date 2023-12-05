@@ -34,7 +34,6 @@
     <Content Include="templates\survey2_results.html" />
     <Content Include="templates\survey3.html" />
     <Content Include="templates\survey3_results.html" />
-    <Content Include="users.db" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates\" />

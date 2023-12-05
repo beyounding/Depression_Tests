@@ -43,6 +43,7 @@ def login():
            return render_template('login.html', error='Invalid username or password')
     return render_template('login.html')
 
+@app.route('/admin/register', methods=['GET', 'POST'])
 def admin_register():
     if current_user.is_admin:
         if request.method == 'POST':
