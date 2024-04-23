@@ -23,7 +23,7 @@ class User(UserMixin, db.Model):
 def load_user(user_id):
    return User.query.get(int(user_id))
 
-class Participant(db.Model):
+class Participant2(db.Model):
     id = db.Column(db.Integer, primary_key=True)
     name = db.Column(db.String(100), nullable=False)
     dob = db.Column(db.String(20), nullable=False)
@@ -70,7 +70,7 @@ def add_participant():
     sex = request.form['sex']
     comments = request.form['comments']
 
-    new_participant = Participant(name=name, dob=dob, sex=sex, comments=comments, result1=0, result2=0, result3=0, result4=0)
+    new_participant = Participant2(name=name, dob=dob, sex=sex, comments=comments, result1=0, result2=0, result3=0, result4=0)
     db.session.add(new_participant)
     db.session.commit()
 
@@ -215,8 +215,10 @@ def submit_survey4():
 
 @app.route('/participant_list')
 def participant_list():
-    participants = Participant.query.all()
+    participants = Participant2.query.all()
     return render_template('participant_list.html', participants=participants)
+
+
 
 if __name__ == '__main__':
     app.run(debug=True)
