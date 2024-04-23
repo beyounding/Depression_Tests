@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ГШД</title>
+</head>
+<body>
+    <h2>ГЕРИАТРИЧЕСКАЯ ШКАЛА ДЕПРЕССИИ (ГШД)</h2>
+    <p>1. У меня часто нет настроения: {{ answers['questionn1'] }}</p>
+    <p>2. Я потерял интерес к привычным делам: {{ answers['questionn2'] }}</p>
+    <p>3. Я часто устаю: {{ answers['question3'] }}</p>
+    <p>4. Мне часто бывает сложно сосредоточиться: {{ answers['questionn4'] }}</p>
+    <p>5. Мне часто не хватает уверенности в себе: {{ answers['questionn5'] }}</p>
+    <p>6. Я часто себя обвиняю: {{ answers['questionn6'] }}</p>
+    <p>7. Меня не ждёт ничего хорошего: {{ answers['questionn7'] }}</p>
+    <p>8. Я не хочу жить: {{ answers['questionn8'] }}</p>
+    <p>9. Я плохо сплю: {{ answers['questionn9'] }}</p>
+    <p>10. У меня часто нет аппетита: {{ answers['questionn10'] }}</p>
+
+    {% set count = 0 %}
+    {% if answers['questionn1'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn2'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn3'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn4'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn5'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn6'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn7'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn8'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn9'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionn10'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+
+
+    <p>Общий балл: {{ count }}.</p>
+
+    {% if count < 3 %}
+    <p>Результат: Отсутствие депрессии</p>
+    {% elif count >= 4 %}
+    <p>Результат: Вероятная депрессия</p>
+    {% endif %}
+</body>
+</html>

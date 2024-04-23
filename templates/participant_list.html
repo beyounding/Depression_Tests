@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Participant List</title>
+</head>
+<body>
+    <h1>Participant List</h1>
+    <ul>
+        {% for participant in participants %}
+        <li>
+            Name: {{ participant.name }}<br>
+            Date of Birth: {{ participant.dob }}<br>
+            Sex: {{ participant.sex }}<br>
+            Comments: {{ participant.comments }}<br>
+            Result: {{  result_count }}<br><br>
+        </li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>ШК</title>
+</head>
+<body>
+    <h1>ШКАЛА КЭРРОЛЛА ДЛЯ ОЦЕНКИ ДЕПРЕССИИ</h1>
+    <p>1. Я так же энергичен, как и всегда: {{ answers['questionnn1'] }}</p>
+    <p>2. Я теряю в весе: {{ answers['questionnn2'] }}</p>
+    <p>3. Я забросил многие свои интересы и увлечения: {{ answers['questionnn3'] }}</p>
+    <p>4. Из-за болезни я полностью потерял интерес к сексу: {{ answers['questionnn4'] }}</p>
+    <p>5. Меня очень беспокоит мое тело: {{ answers['questionnn5'] }}</p>
+    <p>6. Должно быть очевидно, что я обеспокоен и взволнован: {{ answers['questionnn6'] }}</p>
+    <p>7. Я всё ещё могу продолжать выполнять необходимую работу: {{ answers['questionnn7'] }}</p>
+    <p>8. Я могу с лёгкостью сосредоточиться, читая документы: {{ answers['questionnn8'] }}</p>
+    <p>9. Отход ко сну занимает у меня более полутора часов: {{ answers['questionnn9'] }}</p>
+    <p>10. Я неспокойный и суетливый: {{ answers['questionnn10'] }}</p>
+    <p>11. Утром я просыпаюсь гораздо раньше, чем нужно: {{ answers['questionnn11'] }}</p>
+    <p>12. Смерть – лучший выход для меня: {{ answers['questionnn12'] }}</p>
+    <p>13. Я часто испытываю чувство слабости и головокружение: {{ answers['questionnn13'] }}</p>
+    <p>14. Мне кажется, что меня наказывают за ошибки, совершенные в прошлом: {{ answers['questionnn14'] }}</p>
+    <p>15. Мои сексуальные предпочтения такие же, как и до болезни: {{ answers['questionnn15'] }}</p>
+    <p>16. Я часто чувствую себя несчастным, я часто готов заплакать: {{ answers['questionnn16'] }}</p>
+    <p>17. Я часто мечтаю умереть: {{ answers['questionnn17'] }}</p>
+    <p>18. У меня проблемы с пищеварением: {{ answers['questionnn18'] }}</p>
+    <p>19. Я часто просыпаюсь посреди ночи: {{ answers['questionnn19'] }}</p>
+    <p>20. Мне стыдно, и я чувствую себя бесполезным: {{ answers['questionnn20'] }}</p>
+    <p>21. Я стал настолько заторможенным, что теперь мне нужна помощь в мытье и одевании: {{ answers['questionnn21'] }}</p>
+    <p>22. Отход ко сну теперь занимает у меня больше времени, чем обычно: {{ answers['questionnn22'] }}</p>
+    <p>23. Большую часть времени мне очень страшно, но я не знаю почему: {{ answers['questionnn23'] }}</p>
+    <p>24. Меня беспокоит то, о чем я сожалею: {{ answers['questionnn24'] }}</p>
+    <p>25. Я получаю удовольствие и удовлетворение от того, что я делаю: {{ answers['questionnn25'] }}</p>
+    <p>26. Всё, что мне нужно для полного выздоровления, – это хороший отдых: {{ answers['questionnn26'] }}</p>
+    <p>27. Мой сон беспокойный и прерывистый: {{ answers['questionnn27'] }}</p>
+    <p>28. Мой ум такой же быстрый и острый, как и всегда: {{ answers['questionnn28'] }}</p>
+    <p>29. Я чувствую, что есть смысл жить: {{ answers['questionnn29'] }}</p>
+    <p>30. Мой голос унылый и безжизненный: {{ answers['questionnn30'] }}</p>
+    <p>31. Я чувствую себя раздражительным или нервным: {{ answers['questionnn31'] }}</p>
+    <p>32. Я чувствую себя в хорошем настроении: {{ answers['questionnn32'] }}</p>
+    <p>33. Мое сердце иногда бьётся быстрее обычного: {{ answers['questionnn33'] }}</p>
+    <p>34. Я считаю, что мой случай безнадёжный: {{ answers['questionnn34'] }}</p>
+    <p>35. Утром я просыпаюсь раньше обычного: {{ answers['questionnn35'] }}</p>
+    <p>36. Я так же получаю наслаждение от приёма пищи, как и всегда: {{ answers['questionnn36'] }}</p>
+    <p>37. Большую часть времени мне приходится ходить кругами: {{ answers['questionnn37'] }}</p>
+    <p>38. Я напуган и почти впадаю в панику: {{ answers['questionnn38'] }}</p>
+    <p>39. Моё тело неполноценное и больное: {{ answers['questionnn39'] }}</p>
+    <p>40. Я заболел из-за плохой погоды: {{ answers['questionnn40'] }}</p>
+    <p>41. Мои руки дрожат настолько сильно, что люди легко это замечают: {{ answers['questionnn41'] }}</p>
+    <p>42. Мне всё ещё нравится бывать в обществе и встречаться с людьми: {{ answers['questionnn42'] }}</p>
+    <p>43. Я думаю, что я кажусь спокойным со стороны: {{ answers['questionnn43'] }}</p>
+    <p>44. Я думаю, что я такой же хороший человек, как и любой другой: {{ answers['questionnn44'] }}</p>
+    <p>45. Моя проблема объясняется серьёзной внутренней болезнью: {{ answers['questionnn45'] }}</p>
+    <p>46. Я думал о попытке покончить с собой: {{ answers['questionnn46'] }}</p>
+    <p>47. Я почти ничего не делал в последнее время: {{ answers['questionnn47'] }}</p>
+    <p>48. В будущем меня ждут только одни страдания: {{ answers['questionnn48'] }}</p>
+    <p>49. Я очень беспокоюсь о своём здоровье: {{ answers['questionnn49'] }}</p>
+    <p>50. Мне приходиться заставлять себя есть хотя бы чуть-чуть: {{ answers['questionnn50'] }}</p>
+    <p>51. Большую часть времени я чувствую себя обессиленным: {{ answers['questionnn51'] }}</p>
+    <p>52. Я могу сказать, что я сильно похудел: {{ answers['questionnn52'] }}</p>
+
+    {% set count = 0 %}
+    {% if answers['questionnn1'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn2'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn3'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn4'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn5'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn6'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn7'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn8'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn9'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn10'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn11'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn12'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn13'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn14'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn15'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn16'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn17'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn18'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn19'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn20'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn21'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn22'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn23'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn24'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn25'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn26'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn27'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn28'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn29'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn30'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn31'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn32'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn33'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn34'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn35'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn36'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn37'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn38'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn39'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn40'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn41'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn42'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn43'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn44'] == 'Нет' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn45'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn46'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn47'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn48'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn49'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn50'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn51'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['questionnn52'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+
+
+
+    <p>Общий балл: {{ count }}.</p>
+
+    {% if count <= 7 %}
+    <p>Результат: норма</p>
+    {% elif count >= 8 and count <=13 %}
+    <p>Результат: Лёгкое депрессивное расстройство</p>
+    {% elif count >= 14 and count <=18 %}
+    <p>Результат: Депрессивное расстройство средней степени тяжести</p>
+    {% elif count >= 19 and count <=22 %}
+    <p>Результат: Депрессивное расстройство тяжелой степени</p>
+    {% elif count >=23 %}
+    <p>Результат: Депрессивное расстройство крайне тяжёлой степени</p>
+    {% endif %}
+
+</body>
+</html>

@@ -27,6 +27,8 @@
     <Content Include="templates\admin_register.html" />
     <Content Include="templates\index.html" />
     <Content Include="templates\login.html" />
+    <Content Include="templates\participant_info.html" />
+    <Content Include="templates\participant_list.html" />
     <Content Include="templates\register.html" />
     <Content Include="templates\result.html" />
     <Content Include="templates\start_page.html" />
@@ -34,6 +36,8 @@
     <Content Include="templates\survey2_results.html" />
     <Content Include="templates\survey3.html" />
     <Content Include="templates\survey3_results.html" />
+    <Content Include="templates\survey4.html" />
+    <Content Include="templates\survey4_results.html" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="templates\" />

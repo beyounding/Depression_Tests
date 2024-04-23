@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+</head>
+<body>
+    <h2>ГЕРИАТРИЧЕСКАЯ ШКАЛА ТРЕВОГИ (ГШТ)</h2>
+    <p>1. Я часто ощущаю сильное сердцебиение: {{ answers['question1'] }}</p>
+    <p>2. Я часто потею: {{ answers['question2'] }}</p>
+    <p>3. Я часто испытываю дрожь в теле: {{ answers['question3'] }}</p>
+    <p>4. У меня часто сохнет во рту: {{ answers['question4'] }}</p>
+    <p>5. Мне часто бывает тяжело дышать: {{ answers['question5'] }}</p>
+    <p>6. Мне часто бывает страшно: {{ answers['question6'] }}</p>
+    <p>7. У меня часто немеют конечности: {{ answers['question7'] }}</p>
+    <p>8. Я часто ощущаю ком в горле: {{ answers['question8'] }}</p>
+    <p>9. Я часто испытываю сильное беспокойство: {{ answers['question9'] }}</p>
+    <p>10. Мне часто бывает сложно заснуть: {{ answers['question10'] }}</p>
+
+    {% set count = 0 %}
+    {% if answers['question1'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question2'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question3'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question4'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question5'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question6'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question7'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question8'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question9'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+    {% if answers['question10'] == 'Да' %}
+    {% set count = count + 1 %}
+    {% endif %}
+
+
+    <p>Общий балл: {{ count }}.</p>
+
+    {% if count < 3 %}
+    <p>Результат: Отсутствие тревоги</p>
+    {% elif count >= 4 %}
+    <p>Результат: Вероятная тревога</p>
+    {% endif %}
+</body>
+</html>
